@@ -14,7 +14,7 @@ import {
 } from "@aws-amplify/ui-react";
 
 
-function App1() {
+function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -24,8 +24,6 @@ function App1() {
     </div>
   );
 }
-
-export default App1;
 
 function App({ signOut }) {
   return (
