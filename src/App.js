@@ -1,7 +1,8 @@
-import { useState } from "react";
-import Index from "./components/Index";
-
-import logo from "./logo.svg";
+// import { useState } from "react";
+// import Index from "./components/Index";
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
 import "@aws-amplify/ui-react/styles.css";
 import {
   withAuthenticator,
@@ -11,6 +12,20 @@ import {
   View,
   Card,
 } from "@aws-amplify/ui-react";
+
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Hello from V2</h1>
+      </header>
+    </div>
+  );
+}
+
+export default App;
 
 function App({ signOut }) {
   return (
